@@ -8,7 +8,7 @@ def reverse_digits_and_check_palindrome(number):
         if str(number) == str(number)[::-1]:
             return number
 
-number = 123
+number = int(input("Enter a Number:  "))
 result = reverse_digits_and_check_palindrome(number)
 print(f"Final palindrome number after reversing and adding: {result}")
 

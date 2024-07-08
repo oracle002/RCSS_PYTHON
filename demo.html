@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Set the title of the web page -->
+    <title>Hello Form</title>
+    <style>
+        /* Add some basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            color: green; /* Change the heading color to green */
+        }
+        form {
+            padding: 20px;
+            margin: 0 auto;
+            width: 300px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        input[type='text'], input[type='checkbox'], input[type='submit'], select {
+            display: block;
+            margin: 5px auto;
+        }
+        .checkbox-label {
+            display: inline-block; /* Display checkboxes inline */
+            margin-right: 10px; /* Add spacing between checkboxes and labels */
+        }
+    </style>
+</head>
+<body>
+    <!-- Green heading with text "GeeksforGeeks" -->
+    <h1>GeeksforGeeks</h1>
+    <!-- Form with method 'post' and action 'cgipgrm1.py' -->
+    <form method='post' action='cgipgrm2.py'>
+        <!-- Name input field -->
+        <p><label for="name">Name:</label> <input type='text' name='name' id="name" /></p>
+        <!-- Email input field -->
+        <p><label for="email">Email:</label> <input type='text' name='email' id="email" /></p>
+        <!-- Age input field -->
+        <p><label for="age">Age:</label> <input type='text' name='age' id="age" /></p>
+        <!-- Action selection -->
+        <p>
+            <label for="action">Action:</label>
+            <select name="action" id="action">
+                <option value="insert">Insert</option>
+                <option value="update">Update</option>
+                <option value="delete">Delete</option>
+                <option value="read">Read</option>
+            </select>
+        </p>
+        <!-- Submit button -->
+        <input type='submit' value='Submit' />
+    </form>
+</body>
+</html>
